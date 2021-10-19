@@ -3,6 +3,7 @@ package studingswing.jbutton;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
@@ -18,9 +19,9 @@ public class ButtonExemple {
 		
 		jTextField.setBounds(50, 50, 150, 25);
 		
-		JButton jButton = new JButton("Click Here");//creating instance of JButton
+		JButton jButton = new JButton("Click here");//creating instance of JButton
 		
-		jButton.setBounds(50, 100, 95, 30); // x axis, y axis, width, height
+		jButton.setBounds(100, 80, 100, 40); // x axis, y axis, width, height
 		
 		jButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
