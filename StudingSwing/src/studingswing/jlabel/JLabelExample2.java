@@ -3,6 +3,7 @@ package studingswing.jlabel;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.Closeable;
 
 public class JLabelExample2 extends Frame implements ActionListener {
 	
@@ -11,7 +12,7 @@ public class JLabelExample2 extends Frame implements ActionListener {
 	JButton btn;
 	
 	public JLabelExample2() {
-
+		
 		tf = new JTextField(); //creating instance of JTextField
 		tf.setBounds(50, 50, 150, 20);
 		
@@ -28,6 +29,7 @@ public class JLabelExample2 extends Frame implements ActionListener {
 		setSize(400,400);
 		setLayout(null);
 		setVisible(true);
+		
 	}
 	
 	
