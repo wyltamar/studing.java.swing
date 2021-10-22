@@ -1,19 +1,20 @@
 package studingswing.jtextfield;
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-public class JTextFieldExemple {
+public class JTextFieldExemple implements ActionListener {
 	JTextField jTextField;
 	JTextField jTextField2;
 	JTextField jTextField3;
 	JButton btn1;
 	JButton btn2;
 
-	public JTextFieldExemple() {
+	public JTextFieldExemple(){
 
 		JFrame frame = new JFrame("Eample JTextField"); // Creating instance of JFrame
 
@@ -34,6 +35,9 @@ public class JTextFieldExemple {
 
 		btn2 = new JButton("-");
 		btn2.setBounds(220, 250, 50, 50);
+		
+		btn1.addActionListener(this);
+		btn2.addActionListener(this);
 
 		frame.add(jTextField);
 		frame.add(jTextField2);
@@ -41,6 +45,7 @@ public class JTextFieldExemple {
 
 		frame.add(btn1);
 		frame.add(btn2);
+		
 
 		frame.setSize(400, 400);
 		frame.setResizable(false);
